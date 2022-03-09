@@ -12,7 +12,7 @@ pip install vk-api
 
 ### options.json
 
-First of all, you need to edit options.json:
+First of all, you need to edit `options.json`:
 ```json
 {
   "version": "5.131",
@@ -22,8 +22,19 @@ First of all, you need to edit options.json:
   "login": "login"
 }
 ```
-Replace "id" with your VK id, "pass" with your VK password, "login" with your VK login.
+Replace `"id"` with your VK id, `"pass"` with your VK password, `"login"` with your VK login.
+
+It should look something like this:
+```json
+{
+  "version": "5.131",
+
+  "user_id": "12345678",
+  "pass": "iLoveMyMom123",
+  "login": "89123456789"
+}
+```
 
 ### Running the script
 
-To use the script, run main.py, you will be guided by the prompts.
+To use the script, run `main.py`, you will be guided by the prompts.
