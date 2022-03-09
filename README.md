@@ -1,5 +1,7 @@
 # vknuker
-Deletes all VK messages by query
+Deletes all VK messages by query.
+
+*Still being tested so use carefully.*
 
 ## Requierments
 
@@ -38,3 +40,4 @@ It should look something like this:
 ### Running the script
 
 To use the script, run `main.py`, you will then be guided by the prompts.
+You then have to confirm that you want to delete the messages and the process will start.
