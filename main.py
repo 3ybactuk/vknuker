@@ -2,6 +2,15 @@ import vk_api
 from info import *
 
 
+def captcha_handler(captcha):
+    # Stolen from python273'
+    # https://github.com/python273/vk_api/blob/master/examples/captcha_handle.py
+
+    key = input("Enter captcha code {0}: ".format(captcha.get_url())).strip()
+
+    return captcha.try_again(key)
+
+
 def two_fa():
     fa_code = input("2FA Code: ")
     remember = bool(int(input("Remember this device? (1/0): ")))
@@ -50,7 +59,12 @@ def nuke_by_q(vk_session):
 def main():
     # pwd = input("Password: ")
 
-    vk_session = vk_api.VkApi(user_login, pwd, auth_handler=two_fa, app_id=6121396, api_version=api_version)
+    vk_session = vk_api.VkApi(user_login, pwd,
+                              auth_handler=two_fa,
+                              captcha_handler=captcha_handler,
+                              app_id=6121396,
+                              api_version=api_version)
+    
     try:
         vk_session.auth()
     except Exception as error_msg:
