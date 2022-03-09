@@ -11,13 +11,11 @@ def two_fa():
 def nuke_by_q(vk_session):
     query = input("По какому слову уничтожать?: ")
     msgs = vk_session.method("messages.search", {"q": query})
-    print(msgs)
 
     results_count = msgs['count']
     del_count = 0
     print(f"Найдено совпадений: {results_count}")
 
-    print(msgs['items'])
     del_for_all = int(input("Удалить для всех (если <24 часов)? (1/0): "))
     del_from_everyone = int(input("Удалить сообщения всех пользователей? (1 = от всех/0 = только свои): "))
 
