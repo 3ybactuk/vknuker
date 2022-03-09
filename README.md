@@ -40,4 +40,7 @@ It should look something like this:
 ### Running the script
 
 To use the script, run `main.py`, you will then be guided by the prompts.
+
 You then have to confirm that you want to delete the messages and the process will start.
+
+*Keep in mind that messages older then 24 hours won't be deleted for everyone*
