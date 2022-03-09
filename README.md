@@ -37,4 +37,4 @@ It should look something like this:
 
 ### Running the script
 
-To use the script, run `main.py`, you will be guided by the prompts.
+To use the script, run `main.py`, you will then be guided by the prompts.
