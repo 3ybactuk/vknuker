@@ -10,7 +10,7 @@ This script requiers [vk_api](https://pypi.org/project/vk-api/) to run.
 pip install vk-api
 ```
 
-Python 3.9 is recommended.
+Python 3.9 or newer is recommended.
 
 ## Usage
 
